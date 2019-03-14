@@ -16,7 +16,7 @@
   
   <div class="form-group">
     <label for="leadsSelect">Leads</label>
-    <select class="form-control" id="exampleFormControlSelect1" ng-model="lead" ng-options="lead as lead.FirstName+' '+lead.LastName for lead in leads track by lead.Id">
+    <select class="form-control" id="exampleFormControlSelect1" ng-model="lead" ng-options="lead as lead.FirstName+' '+lead.LastName for lead in leads track by lead.Id" ng-change="getItems(lead)">
       <option value="" ng-if="!lead">Select a Lead</option>
     </select>
   </div>
