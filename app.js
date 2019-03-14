@@ -35,7 +35,7 @@ var mainApp = angular.module("myApp", ['ngResource']);
 
             }, function(data){
 
-                  alert('An error has occurred: '+data.Data.Message);
+                  alert('An error has occurred: '+data.data.Message);
 
 
             })
