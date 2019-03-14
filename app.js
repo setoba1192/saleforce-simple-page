@@ -30,9 +30,12 @@ var mainApp = angular.module("myApp", ['ngResource']);
 
             BaseService.createItem({},$scope.item, function(data){
 
-
+                  alert('Item created!');
+                  $scope.item = null;
 
             }, function(data){
+
+                  alert('An error has occurred: '+data.Data.Message);
 
 
             })
