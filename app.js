@@ -4,7 +4,8 @@ var mainApp = angular.module("myApp", ['ngResource']);
             
          BaseService.getLeads(function(data){
 
-               $scope.leads = data;
+
+               $scope.leads = data.Data;
 
             },function(data){
 
