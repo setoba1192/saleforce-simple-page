@@ -8,7 +8,7 @@
          id : '@id'
       }, {
          getLeads : {
-            method : 'JSONP',
+            method : 'GET',
             headers: { 'Authorization': 'Bearer 00D1U000001531A!AQwAQL9WQlmOI__2jDvJKcSNxvUcMQciXZuu3VNrrsJEUnwIVbScFKbcdTEhvyxwHha70e9wTPz0EBcNB7g8dYDO1BUDXktj' },
             url : 'https://na85.salesforce.com/services/apexrest/Leads'
          },
