@@ -21,20 +21,37 @@
     </select>
   </div>
   <div class="form-group">
-    <label for="itemsSelect">Items from Lead {{lead.Name}}</label>
-    <select class="form-control" id="itemsSelect">
-      <option>1</option>
-      <option>2</option>
-      <option>3</option>
-      <option>4</option>
-      <option>5</option>
-    </select>
+    <table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Price</th>
+      <th scope="col">Tax</th>
+      <th scope="col">Model</th>
+      <th scope="col">Serial number</th>
+      <th scope="col">Full Name</th>
+      <th scope="col">Full Price</th>
+      <th scope="col">External tax</th>
+
+    </tr>
+  </thead>
+  <tbody>
+    <tr ng-repeat="item in items">
+      <th scope="row">{{$index}</th>
+      <td>{{item.Price__c}}}</td>
+      <td>{{item.Tax__c}}}</td>
+      <td>{{item.Model__c}}</td>
+      <td>{{item.Serial_number__c}}</td>
+      <td>{{item.Full_Name__c}}</td>
+      <td>{{item.Full_Price__c}}</td>
+      <td>{{item.External_tax__c}}</td>
+    </tr>
+    
+    </tr>
+  </tbody>
+</table>
   </div>
-  <div class="form-group">
-    <label for="exampleFormControlTextarea1">Example textarea</label>
-    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-  </div>
-</form>
+  
 </div></div>
 <div class="row">
 <div class="col-sm">

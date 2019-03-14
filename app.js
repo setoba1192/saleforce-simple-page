@@ -12,6 +12,18 @@ var mainApp = angular.module("myApp", ['ngResource']);
 
             });
 
+         $scope.getItems = function(lead){
+
+            BaseService.getItemsByLead({LeadID : lead.id}, function(data){
+
+               $scope.items = data.Data;
+
+
+            },function (data){
+
+            });
+         }
+
 
             
          });
