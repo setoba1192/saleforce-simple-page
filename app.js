@@ -24,6 +24,22 @@ var mainApp = angular.module("myApp", ['ngResource']);
             });
          }
 
+         $scope.createItem = function(){
+
+            $scope.item.Lead__c = $scope.leadAssignment.Id;
+
+            BaseService.createItem({},$scope.item, function(data){
+
+
+
+            }, function(data){
+
+
+            })
+
+
+         }
+
 
             
          });
